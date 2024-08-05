@@ -1,8 +1,8 @@
 {
     "name": "Common Codespace",
-  
+
     "image": "mcr.microsoft.com/devcontainers/universal:2",
-  
+
     "features": {
       "ghcr.io/devcontainers/features/node:1": {
         "version": "20"
@@ -13,7 +13,7 @@
         "installJuypterlab": false
       }
     },
-  
+
     // Configure tool-specific properties.
     "customizations": {
       // Configure properties specific to VS Code.
@@ -88,7 +88,7 @@
           "go.lintTool": "golangci-lint",
           "go.lintFlags": ["--fast"]
         },
-  
+
         // Add the IDs of extensions you want installed when the container is created.
         "extensions": [
           "GitHub.vscode-pull-request-github",
@@ -129,16 +129,16 @@
           "formulahendry.auto-close-tag",
           "christian-kohler.path-intellisense",
           "ecmel.vscode-html-css",
-          "sidthesloth.html5-boilerplate"
+          "sidthesloth.html5-boilerplate",
+          "innoverio.vscode-dbt-power-user"
         ]
       }
     },
     "forwardPorts": [3000, 5000, 8000],
-  
+
     "onCreateCommand": "sh ./.devcontainer/onCreateCommand.sh",
-  
+
     "postCreateCommand": "sh ./.devcontainer/postCreateCommand.sh",
-  
+
     "postStartCommand": "sh ./.devcontainer/postStartCommand.sh"
   }
-  

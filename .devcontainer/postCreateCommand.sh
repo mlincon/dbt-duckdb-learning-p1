@@ -8,3 +8,6 @@ pre-commit install
 # conda init
 # conda activate pgvector && \
 #     pip install -r pgvector/requirements.txt
+
+# install libraries
+pip install -r requirements.txt
