@@ -161,6 +161,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# ollama files
-*/ollama_files/models
-*/ollama_files/id_**
+# dbt
+target/
+dbt_packages/
+*.ddb
+*.wal
+*.backup
