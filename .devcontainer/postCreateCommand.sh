@@ -11,3 +11,6 @@ pre-commit install
 
 # install libraries
 pip install -r requirements.txt
+
+# install dbt dependencies
+dbt deps
