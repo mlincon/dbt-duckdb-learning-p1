@@ -130,7 +130,8 @@
           "christian-kohler.path-intellisense",
           "ecmel.vscode-html-css",
           "sidthesloth.html5-boilerplate",
-          "innoverio.vscode-dbt-power-user"
+          "innoverio.vscode-dbt-power-user",
+          "Evidence.sqltools-duckdb-driver"
         ]
       }
     },
