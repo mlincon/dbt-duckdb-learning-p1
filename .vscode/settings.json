@@ -1,0 +1,12 @@
+{
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+      "name": "sqlpatterns",
+      "accessMode": "Read/Write",
+      "previewLimit": 50,
+      "driver": "DuckDB",
+      "databaseFilePath": "/workspaces/minimum-viable-sql-patterns-book/sqlpatterns.ddb"
+    }
+  ]
+}
