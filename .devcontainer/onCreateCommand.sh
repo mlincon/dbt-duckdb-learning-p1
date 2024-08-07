@@ -6,7 +6,7 @@ pip install \
     "isort==5.12.0" \
     "pre-commit==3.5.0" \
     "ruff==0.1.6" \
-    "sqlfluff==2.3.5" \
+    "sqlfluff==3.1.0" \
     "yamllint==1.33.0"
 
 # install hadolint
