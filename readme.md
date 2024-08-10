@@ -10,6 +10,8 @@
 
 `dbt run` to materialize the models.
 
+`dbt seed` to include static files from the `/seeds` folder.
+
 ## Simple model
 
 Create a directory in the `models` directory. Add `.sql` files.

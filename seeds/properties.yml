@@ -1,0 +1,17 @@
+version: 2
+
+seeds:
+  - name: post_history_type_mapping
+    description: Mapping post history activity tpye
+    config:
+      column_types:
+        post_history_type_id: integer
+        activity_type: string
+        grouped_activity_type: string
+
+  - name: vote_type_mapping
+    description: Mapping for vote types
+    config:
+      column_types:
+        vote_type_id: integer
+        vote_type: string
