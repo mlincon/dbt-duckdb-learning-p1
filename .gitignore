@@ -167,3 +167,6 @@ dbt_packages/
 *.ddb
 *.wal
 *.backup
+
+# ignore main repo (used for copying data)
+original_sql_patterns
