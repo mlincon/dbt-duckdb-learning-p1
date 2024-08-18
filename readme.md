@@ -51,6 +51,12 @@
 
 Create a directory in the `models` directory. Add `.sql` files.
 
+## Packages
+
+### `dbt-utils`
+
+- `union_relations`: combines via `union all` an array of Relations, even when columns have differing orders in each Relation, and/or some columns are missing from some relations. Ref: https://github.com/dbt-labs/dbt-utils?tab=readme-ov-file#union_relations-source
+
 # Data model
 
 ![alt text](images/image.png)
