@@ -30,9 +30,9 @@ clean-targets: # directories to be removed by `dbt clean`
 models:
   sqlpatterns:
     # Config indicated by + and applies to all files under models/example/
-    gold:
+    l02_gold:
       +materialized: table
-    silver:
+    l01_silver:
       +materialized: table
-    bronze:
+    l00_bronze:
       +materialized: table

@@ -8,6 +8,7 @@
 - models depend on other models, have tests defined on them, and can be created as tables or views
 - the names of models created by dbt are their file names
 - example: the file `post_history.sql` represents the model named `post_history`
+- by default, every model is a view. This can be adjusted in `dbt_project.yml`, where the `materialized` argument can be set to `table`
 
 ### Tests
 
@@ -35,7 +36,16 @@
 - `seeds`: store small static/mapping files that can be loaded to a data warehouse via `dbt seed`
 - `marco`: sql based functions that can be reused across project
 
-## Commands
+
+### Configurations
+
+- `profiles.yml`: contains data warehouse connection details
+  - `target`: defines the environment (default is `dev`). Multiple targets are possible
+  - this can contain multiple profiles if you have more than one dbt project
+
+- `dbt_project.yml`: define the profile to be use and the paths for different file types (`*-paths`). Also set whether models should be created as view or table
+
+### Commands
 
 `dbt init <project name>` to create a new project.
 
@@ -69,4 +79,5 @@ Additional:
 
 - https://github.com/meltano/jaffle-shop-template
 - https://github.com/gwenwindflower/octocatalog
+- https://github.com/josephmachado/simple_dbt_project
 - https://www.startdataengineering.com/post/dbt-data-build-tool-tutorial/

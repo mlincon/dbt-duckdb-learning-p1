@@ -1,5 +1,8 @@
 version: 2
 
+config:
+  send_anonymous_usage_stats: false
+
 sqlpatterns:
   target: dev
   outputs:
