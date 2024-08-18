@@ -1,7 +1,7 @@
 [sqlfluff]
 dialect = duckdb
-; templater = dbt
-templater = jinja
+templater = dbt
+; templater = jinja
 runaway_limit = 10
 max_line_length = 80
 indent_unit = space
@@ -36,3 +36,19 @@ capitalisation_policy = upper
 
 [sqlfluff:rules:ambiguous.column_references]  # Number in group by
 group_by_and_order_by_style = implicit
+
+; [sqlfluff:templater:dbt]
+; project_dir = ./.
+; profiles_dir = ./.
+
+[sqlfluff:templater:jinja]
+apply_dbt_builtins = True
+
+
+[sqlfluff:templater:jinja:macros]
+# Macros provided as builtins for dbt projects
+dbt_ref = {% macro ref(model_ref) %}{{model_ref}}{% endmacro %}
+dbt_source = {% macro source(source_name, table) %}{{source_name}}_{{table}}{% endmacro %}
+dbt_config = {% macro config() %}{% for k in kwargs %}{% endfor %}{% endmacro %}
+dbt_var = {% macro var(variable, default='') %}item{% endmacro %}
+dbt_is_incremental = {% macro is_incremental() %}True{% endmacro %}

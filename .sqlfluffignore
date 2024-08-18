@@ -1,5 +1,5 @@
+.venv
 target/
+reports/
 dbt_packages/
 macros/
-.venv
-reports/
