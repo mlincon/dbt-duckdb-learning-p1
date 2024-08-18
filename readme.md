@@ -88,3 +88,8 @@ Additional:
 - [Blog startdataengineering[dot]com: dbt(Data Build Tool) Tutorial. Accessed: 2024-08-18](https://www.startdataengineering.com/post/dbt-data-build-tool-tutorial/)
 - [Blog startdataengineering[dot]com: Uplevel your dbt workflow. Accessed: 2024-08-18](https://www.startdataengineering.com/post/uplevel-dbt-workflow/)
 - [Blog startdataengineering[dot]com: How to set up a dbt data-ops workflow. Accessed: 2024-08-18](https://www.startdataengineering.com/post/cicd-dbt/)
+
+More:
+- [Blog Building scalable data pipelines with Kedro and Ibis]([https://github.com/deepyaman/jaffle-shop](https://kedro.org/blog/building-scalable-data-pipelines-with-kedro-and-ibis))
+- [Repo Building scalable data pipelines with Kedro and Ibis](https://github.com/deepyaman/jaffle-shop)
+- [Ibis](https://ibis-project.org/)
