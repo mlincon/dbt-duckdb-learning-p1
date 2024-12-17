@@ -19,6 +19,7 @@
 ```
 
 - `analysis`: any `.sql` files here will be compiled to raw sql with `dbt compile`. The compiled scripts will not executed with `dbt run` but can be copied to any other tool
+- `models`: any `.sql` within this folder will be executed when running dbt (`dbt run`)
 - `seeds`: store small static/mapping files that can be loaded to a data warehouse via `dbt seed`
 - `marco`: sql based functions that can be reused across project
 - `snapshots`: helps to capture changes over time like SCD2 (slowly changing dimension tables type 2). Example: a customer changing address. Example: https://github.com/josephmachado/simple_dbt_project/blob/master/snapshots/customers.sql
